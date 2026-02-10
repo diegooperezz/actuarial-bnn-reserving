@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datos (NUNCA subir datos a GitHub)
+data/
+*.csv
+*.xlsx
+
+# Modelos pesados
+models/
+*.pkl
+*.h5
+*.pt
+
+# Variables de entorno
+.env
+.DS_Storeentorno_amul/ 
+data/ 
+__pycache__/ 

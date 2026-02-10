@@ -1,0 +1,34 @@
+# Reserva de Siniestros Individuales con Incertidumbre Epistémica
+
+Este proyecto aplica técnicas de **Ciencia de Datos Actuarial** para predecir el costo final (*Ultimate Cost*) de reclamaciones de seguros de automóviles utilizando el dataset **IBM Watson Auto Insurance**.
+
+El enfoque es híbrido, combinando la interpretabilidad de los GLM con la capacidad de cuantificación de incertidumbre de las Redes Neuronales Bayesianas (BNN).
+
+## 🗂 Estructura del Proyecto y Temario
+
+El desarrollo sigue el syllabus del curso de Modelización Avanzada:
+
+1.  **Análisis Exploratorio:** Limpieza y transformación de variables (`notebooks/01_eda_limpieza.ipynb`).
+2.  **Reducción de Dimensionalidad:** Aplicación de **PCA/Análisis Factorial** para sintetizar variables financieras y demográficas (`notebooks/02_pca_reduccion.ipynb`).
+3.  **Segmentación de Riesgos:** Uso de **K-Means Clustering** para crear perfiles de asegurados (`notebooks/03_clustering_perfiles.ipynb`).
+4.  **Modelado GLM (Baseline):** Modelo Lineal Generalizado (Gamma/Tweedie) para establecer una referencia (`notebooks/04_glm_baseline.ipynb`).
+5.  **Modelo Final (BNN):** Red Neuronal Bayesiana con Inferencia Variacional para estimar la **incertidumbre epistémica** de la reserva (`notebooks/05_bnn_modelo_final.ipynb`).
+
+## 🛠 Tecnologías
+
+* **Lenguaje:** Python 3.9+
+* **Librerías Principales:**
+    * `pandas`, `numpy`: Manipulación de datos.
+    * `scikit-learn`: PCA, Clustering, Preprocesamiento.
+    * `statsmodels`: GLM.
+    * `pyro-ppl` / `tensorflow-probability`: Modelado Bayesiano.
+
+## 🚀 Cómo empezar
+
+1. Clonar el repositorio.
+2. Colocar el dataset `WA_Fn-UseC_-Marketing-Customer-Value-Analysis.csv` en la carpeta `data/raw/`.
+3. Instalar dependencias: `pip install -r requirements.txt`
+
+## DESCARGAS
+
+[DATASET](https://www.kaggle.com/datasets/pankajjsh06/ibm-watson-marketing-customer-value-data)
